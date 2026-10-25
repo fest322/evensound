@@ -1,0 +1,131 @@
+{
+  "extName": {
+    "message": "EvenSound"
+  },
+  "extDescription": {
+    "message": "Equilibra el sonido de las películas: acción más suave, diálogos más claros. Funciona con cualquier vídeo."
+  },
+  "status_on": {
+    "message": "Activado en esta pestaña"
+  },
+  "status_off": {
+    "message": "Desactivado"
+  },
+  "status_hint_off": {
+    "message": "Actívalo para equilibrar el sonido de esta pestaña"
+  },
+  "status_hint_on": {
+    "message": "El volumen se adapta a cada escena"
+  },
+  "mode_title": {
+    "message": "Modo"
+  },
+  "preset_soft": {
+    "message": "Suave"
+  },
+  "preset_soft_desc": {
+    "message": "La acción conserva su fuerza, sin extremos"
+  },
+  "preset_cinema": {
+    "message": "Cine"
+  },
+  "preset_cinema_desc": {
+    "message": "Acción más suave, diálogos más altos"
+  },
+  "preset_night": {
+    "message": "Noche"
+  },
+  "preset_night_desc": {
+    "message": "Plano y tranquilo: no despertará a nadie"
+  },
+  "preset_modified": {
+    "message": "editado"
+  },
+  "now_title": {
+    "message": "Ahora"
+  },
+  "meter_movie": {
+    "message": "Película"
+  },
+  "meter_you": {
+    "message": "Lo que oyes"
+  },
+  "state_waiting": {
+    "message": "Esperando sonido…"
+  },
+  "state_silence": {
+    "message": "Silencio"
+  },
+  "state_raise": {
+    "message": "Escena tranquila: subo {n} dB"
+  },
+  "state_lower": {
+    "message": "Escena ruidosa: bajo {n} dB"
+  },
+  "state_even": {
+    "message": "Nivel correcto: sin cambios"
+  },
+  "compare_hold": {
+    "message": "Mantén pulsado para oír el original"
+  },
+  "compare_active": {
+    "message": "Original, al mismo volumen"
+  },
+  "tuning_title": {
+    "message": "Ajuste fino"
+  },
+  "boost_label": {
+    "message": "Subir lo silencioso"
+  },
+  "boost_hint": {
+    "message": "Cuánto más altos suenan los susurros y las charlas tranquilas"
+  },
+  "boost_value": {
+    "message": "hasta +{n} dB"
+  },
+  "boost_off": {
+    "message": "no"
+  },
+  "clarity_label": {
+    "message": "Voces al frente"
+  },
+  "clarity_hint": {
+    "message": "La voz destaca sobre la música y los efectos"
+  },
+  "volume_label": {
+    "message": "Volumen general"
+  },
+  "volume_hint": {
+    "message": "Si al activarlo suena demasiado bajo o alto"
+  },
+  "reset": {
+    "message": "Restablecer modo"
+  },
+  "language": {
+    "message": "Idioma"
+  },
+  "lang_auto": {
+    "message": "Como el navegador"
+  },
+  "error_capture": {
+    "message": "No se pudo capturar el sonido de la pestaña: {msg}"
+  },
+  "error_restricted": {
+    "message": "Esta página no se puede procesar: Chrome no permite capturar sus páginas internas ni la tienda."
+  },
+  "volume_value": {
+    "message": "{n} dB"
+  },
+  "error_busy": {
+    "message": "El sonido de la pestaña sigue ocupado por una sesión anterior; puede pasar tras actualizar la extensión. Recarga la pestaña y actívala de nuevo."
+  },
+  "reload_tab": {
+    "message": "Recargar pestaña"
+  },
+  "state_raise_slight": {
+    "message": "Subo un poco: {n} dB"
+  },
+  "state_lower_slight": {
+    "message": "Bajo un poco: {n} dB"
+  }
+}

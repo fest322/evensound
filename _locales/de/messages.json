@@ -1,0 +1,131 @@
+{
+  "extName": {
+    "message": "EvenSound"
+  },
+  "extDescription": {
+    "message": "Gleicht den Filmton aus: leisere Action, lautere Dialoge. Funktioniert mit jedem Video im Tab."
+  },
+  "status_on": {
+    "message": "Aktiv in diesem Tab"
+  },
+  "status_off": {
+    "message": "Aus"
+  },
+  "status_hint_off": {
+    "message": "Einschalten, um den Ton dieses Tabs auszugleichen"
+  },
+  "status_hint_on": {
+    "message": "Die Lautstärke passt sich jeder Szene an"
+  },
+  "mode_title": {
+    "message": "Modus"
+  },
+  "preset_soft": {
+    "message": "Sanft"
+  },
+  "preset_soft_desc": {
+    "message": "Action bleibt kraftvoll, Extreme werden gekappt"
+  },
+  "preset_cinema": {
+    "message": "Kino"
+  },
+  "preset_cinema_desc": {
+    "message": "Leisere Action, lautere Dialoge"
+  },
+  "preset_night": {
+    "message": "Nacht"
+  },
+  "preset_night_desc": {
+    "message": "Gleichmäßig und ruhig — weckt niemanden"
+  },
+  "preset_modified": {
+    "message": "geändert"
+  },
+  "now_title": {
+    "message": "Gerade"
+  },
+  "meter_movie": {
+    "message": "Film"
+  },
+  "meter_you": {
+    "message": "Sie hören"
+  },
+  "state_waiting": {
+    "message": "Warte auf Ton…"
+  },
+  "state_silence": {
+    "message": "Stille"
+  },
+  "state_raise": {
+    "message": "Leise Szene — hebe um {n} dB an"
+  },
+  "state_lower": {
+    "message": "Laute Szene — senke um {n} dB"
+  },
+  "state_even": {
+    "message": "Pegel passt — keine Änderung"
+  },
+  "compare_hold": {
+    "message": "Gedrückt halten für Originalton"
+  },
+  "compare_active": {
+    "message": "Original, gleich laut"
+  },
+  "tuning_title": {
+    "message": "Feineinstellung"
+  },
+  "boost_label": {
+    "message": "Leises anheben"
+  },
+  "boost_hint": {
+    "message": "Wie viel lauter Flüstern und leise Gespräche werden"
+  },
+  "boost_value": {
+    "message": "bis +{n} dB"
+  },
+  "boost_off": {
+    "message": "aus"
+  },
+  "clarity_label": {
+    "message": "Stimmen nach vorn"
+  },
+  "clarity_hint": {
+    "message": "Sprache hebt sich von Musik und Effekten ab"
+  },
+  "volume_label": {
+    "message": "Gesamtlautstärke"
+  },
+  "volume_hint": {
+    "message": "Falls es nach dem Einschalten zu leise oder zu laut ist"
+  },
+  "reset": {
+    "message": "Auf Modus zurücksetzen"
+  },
+  "language": {
+    "message": "Sprache"
+  },
+  "lang_auto": {
+    "message": "Wie im Browser"
+  },
+  "error_capture": {
+    "message": "Ton des Tabs konnte nicht erfasst werden: {msg}"
+  },
+  "error_restricted": {
+    "message": "Diese Seite kann nicht verarbeitet werden: Chrome erlaubt keine Aufnahme interner Seiten oder des Web Stores."
+  },
+  "volume_value": {
+    "message": "{n} dB"
+  },
+  "error_busy": {
+    "message": "Der Ton des Tabs wird noch von einer früheren Sitzung belegt — das kann nach einem Update der Erweiterung passieren. Laden Sie den Tab neu und schalten Sie wieder ein."
+  },
+  "reload_tab": {
+    "message": "Tab neu laden"
+  },
+  "state_raise_slight": {
+    "message": "Hebe etwas an — um {n} dB"
+  },
+  "state_lower_slight": {
+    "message": "Senke etwas ab — um {n} dB"
+  }
+}

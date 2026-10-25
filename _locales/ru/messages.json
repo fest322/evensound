@@ -1,0 +1,131 @@
+{
+  "extName": {
+    "message": "EvenSound"
+  },
+  "extDescription": {
+    "message": "Выравнивает звук фильмов: экшен тише, диалоги громче. Работает с любым видео во вкладке."
+  },
+  "status_on": {
+    "message": "Работает на этой вкладке"
+  },
+  "status_off": {
+    "message": "Выключено"
+  },
+  "status_hint_off": {
+    "message": "Включите, чтобы выровнять звук этой вкладки"
+  },
+  "status_hint_on": {
+    "message": "Громкость сама подстраивается под сцену"
+  },
+  "mode_title": {
+    "message": "Режим"
+  },
+  "preset_soft": {
+    "message": "Мягко"
+  },
+  "preset_soft_desc": {
+    "message": "Экшен остаётся ярким, крайности срезаны"
+  },
+  "preset_cinema": {
+    "message": "Кино"
+  },
+  "preset_cinema_desc": {
+    "message": "Экшен тише, диалоги громче"
+  },
+  "preset_night": {
+    "message": "Ночь"
+  },
+  "preset_night_desc": {
+    "message": "Ровно и тихо — никого не разбудит"
+  },
+  "preset_modified": {
+    "message": "изменён"
+  },
+  "now_title": {
+    "message": "Сейчас"
+  },
+  "meter_movie": {
+    "message": "Фильм"
+  },
+  "meter_you": {
+    "message": "Вы слышите"
+  },
+  "state_waiting": {
+    "message": "Ждём звук…"
+  },
+  "state_silence": {
+    "message": "Тишина"
+  },
+  "state_raise": {
+    "message": "Тихая сцена — поднимаю на {n} дБ"
+  },
+  "state_lower": {
+    "message": "Громкая сцена — убавляю на {n} дБ"
+  },
+  "state_even": {
+    "message": "Уровень в норме — не трогаю"
+  },
+  "compare_hold": {
+    "message": "Удерживайте, чтобы услышать оригинал"
+  },
+  "compare_active": {
+    "message": "Оригинал на той же громкости"
+  },
+  "tuning_title": {
+    "message": "Тонкая настройка"
+  },
+  "boost_label": {
+    "message": "Поднимать тихое"
+  },
+  "boost_hint": {
+    "message": "Насколько громче становятся шёпот и тихие разговоры"
+  },
+  "boost_value": {
+    "message": "до +{n} дБ"
+  },
+  "boost_off": {
+    "message": "выкл."
+  },
+  "clarity_label": {
+    "message": "Голоса впереди"
+  },
+  "clarity_hint": {
+    "message": "Речь заметнее на фоне музыки и эффектов"
+  },
+  "volume_label": {
+    "message": "Общая громкость"
+  },
+  "volume_hint": {
+    "message": "Если после включения стало слишком тихо или громко"
+  },
+  "reset": {
+    "message": "Вернуть как в режиме"
+  },
+  "language": {
+    "message": "Язык"
+  },
+  "lang_auto": {
+    "message": "Как в браузере"
+  },
+  "error_capture": {
+    "message": "Не удалось захватить звук вкладки: {msg}"
+  },
+  "error_restricted": {
+    "message": "Эту страницу обработать нельзя: Chrome не даёт захватывать свои служебные страницы и магазин."
+  },
+  "volume_value": {
+    "message": "{n} дБ"
+  },
+  "error_busy": {
+    "message": "Звук вкладки всё ещё занят прошлым включением — так бывает после обновления расширения. Перезагрузите вкладку и включите снова."
+  },
+  "reload_tab": {
+    "message": "Перезагрузить вкладку"
+  },
+  "state_raise_slight": {
+    "message": "Чуть поднимаю — на {n} дБ"
+  },
+  "state_lower_slight": {
+    "message": "Чуть убавляю — на {n} дБ"
+  }
+}

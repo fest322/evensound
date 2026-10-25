@@ -1,0 +1,131 @@
+{
+  "extName": {
+    "message": "EvenSound"
+  },
+  "extDescription": {
+    "message": "Evens out movie sound: quieter action, louder dialogue. Works with any video in a tab."
+  },
+  "status_on": {
+    "message": "On for this tab"
+  },
+  "status_off": {
+    "message": "Off"
+  },
+  "status_hint_off": {
+    "message": "Turn on to even out this tab's sound"
+  },
+  "status_hint_on": {
+    "message": "Volume adapts to every scene automatically"
+  },
+  "mode_title": {
+    "message": "Mode"
+  },
+  "preset_soft": {
+    "message": "Gentle"
+  },
+  "preset_soft_desc": {
+    "message": "Keeps the action punchy, trims the extremes"
+  },
+  "preset_cinema": {
+    "message": "Cinema"
+  },
+  "preset_cinema_desc": {
+    "message": "Quieter action, louder dialogue"
+  },
+  "preset_night": {
+    "message": "Night"
+  },
+  "preset_night_desc": {
+    "message": "Flat and calm — won't wake anyone"
+  },
+  "preset_modified": {
+    "message": "edited"
+  },
+  "now_title": {
+    "message": "Right now"
+  },
+  "meter_movie": {
+    "message": "Movie"
+  },
+  "meter_you": {
+    "message": "You hear"
+  },
+  "state_waiting": {
+    "message": "Waiting for sound…"
+  },
+  "state_silence": {
+    "message": "Silence"
+  },
+  "state_raise": {
+    "message": "Quiet scene — raising by {n} dB"
+  },
+  "state_lower": {
+    "message": "Loud scene — lowering by {n} dB"
+  },
+  "state_even": {
+    "message": "Level is fine — leaving it"
+  },
+  "compare_hold": {
+    "message": "Hold to hear the original"
+  },
+  "compare_active": {
+    "message": "Original, at the same volume"
+  },
+  "tuning_title": {
+    "message": "Fine-tuning"
+  },
+  "boost_label": {
+    "message": "Lift quiet scenes"
+  },
+  "boost_hint": {
+    "message": "How much louder whispers and quiet talk get"
+  },
+  "boost_value": {
+    "message": "up to +{n} dB"
+  },
+  "boost_off": {
+    "message": "off"
+  },
+  "clarity_label": {
+    "message": "Voices up front"
+  },
+  "clarity_hint": {
+    "message": "Makes speech stand out from music and effects"
+  },
+  "volume_label": {
+    "message": "Overall volume"
+  },
+  "volume_hint": {
+    "message": "If it got too quiet or too loud after turning on"
+  },
+  "reset": {
+    "message": "Reset to mode"
+  },
+  "language": {
+    "message": "Language"
+  },
+  "lang_auto": {
+    "message": "Browser default"
+  },
+  "error_capture": {
+    "message": "Couldn't capture the tab's sound: {msg}"
+  },
+  "error_restricted": {
+    "message": "This page can't be processed: Chrome doesn't allow capturing its own pages or the Web Store."
+  },
+  "volume_value": {
+    "message": "{n} dB"
+  },
+  "error_busy": {
+    "message": "The tab's sound is still held by a previous session — this can happen after the extension is updated. Reload the tab and turn it on again."
+  },
+  "reload_tab": {
+    "message": "Reload tab"
+  },
+  "state_raise_slight": {
+    "message": "Lifting a little — by {n} dB"
+  },
+  "state_lower_slight": {
+    "message": "Lowering a little — by {n} dB"
+  }
+}

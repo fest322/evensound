@@ -1,0 +1,131 @@
+{
+  "extName": {
+    "message": "EvenSound"
+  },
+  "extDescription": {
+    "message": "Equilibra o som dos filmes: ação mais baixa, diálogos mais altos. Funciona com qualquer vídeo na aba."
+  },
+  "status_on": {
+    "message": "Ativo nesta aba"
+  },
+  "status_off": {
+    "message": "Desligado"
+  },
+  "status_hint_off": {
+    "message": "Ative para equilibrar o som desta aba"
+  },
+  "status_hint_on": {
+    "message": "O volume se ajusta a cada cena"
+  },
+  "mode_title": {
+    "message": "Modo"
+  },
+  "preset_soft": {
+    "message": "Suave"
+  },
+  "preset_soft_desc": {
+    "message": "A ação continua forte, sem exageros"
+  },
+  "preset_cinema": {
+    "message": "Cinema"
+  },
+  "preset_cinema_desc": {
+    "message": "Ação mais baixa, diálogos mais altos"
+  },
+  "preset_night": {
+    "message": "Noite"
+  },
+  "preset_night_desc": {
+    "message": "Uniforme e calmo — não acorda ninguém"
+  },
+  "preset_modified": {
+    "message": "editado"
+  },
+  "now_title": {
+    "message": "Agora"
+  },
+  "meter_movie": {
+    "message": "Filme"
+  },
+  "meter_you": {
+    "message": "Você ouve"
+  },
+  "state_waiting": {
+    "message": "Aguardando som…"
+  },
+  "state_silence": {
+    "message": "Silêncio"
+  },
+  "state_raise": {
+    "message": "Cena baixa — aumentando {n} dB"
+  },
+  "state_lower": {
+    "message": "Cena alta — reduzindo {n} dB"
+  },
+  "state_even": {
+    "message": "Nível bom — sem mudanças"
+  },
+  "compare_hold": {
+    "message": "Segure para ouvir o original"
+  },
+  "compare_active": {
+    "message": "Original, no mesmo volume"
+  },
+  "tuning_title": {
+    "message": "Ajuste fino"
+  },
+  "boost_label": {
+    "message": "Realçar cenas baixas"
+  },
+  "boost_hint": {
+    "message": "Quanto mais altos ficam sussurros e conversas baixas"
+  },
+  "boost_value": {
+    "message": "até +{n} dB"
+  },
+  "boost_off": {
+    "message": "desl."
+  },
+  "clarity_label": {
+    "message": "Vozes em destaque"
+  },
+  "clarity_hint": {
+    "message": "A fala se destaca da música e dos efeitos"
+  },
+  "volume_label": {
+    "message": "Volume geral"
+  },
+  "volume_hint": {
+    "message": "Se ficou baixo ou alto demais após ativar"
+  },
+  "reset": {
+    "message": "Voltar ao modo"
+  },
+  "language": {
+    "message": "Idioma"
+  },
+  "lang_auto": {
+    "message": "Como o navegador"
+  },
+  "error_capture": {
+    "message": "Não foi possível capturar o som da aba: {msg}"
+  },
+  "error_restricted": {
+    "message": "Esta página não pode ser processada: o Chrome não permite capturar páginas internas nem a loja."
+  },
+  "volume_value": {
+    "message": "{n} dB"
+  },
+  "error_busy": {
+    "message": "O som da aba ainda está preso a uma sessão anterior — isso pode acontecer após atualizar a extensão. Recarregue a aba e ative de novo."
+  },
+  "reload_tab": {
+    "message": "Recarregar aba"
+  },
+  "state_raise_slight": {
+    "message": "Aumentando um pouco — {n} dB"
+  },
+  "state_lower_slight": {
+    "message": "Reduzindo um pouco — {n} dB"
+  }
+}

@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header class="header">
+    <img class="logo" src="icons/icon48.png" alt="">
+    <div class="title">
+      <div class="name" data-i18n="extName"></div>
+      <div class="status" id="status"></div>
+    </div>
+    <button class="switch" id="power" role="switch" aria-checked="false" aria-labelledby="status">
+      <span class="knob"></span>
+    </button>
+  </header>
+
+  <p class="hint" id="statusHint"></p>
+
+  <section>
+    <h2 data-i18n="mode_title"></h2>
+    <div class="modes" id="modes" role="radiogroup"></div>
+  </section>
+
+  <section class="card now" id="now" hidden>
+    <h2 data-i18n="now_title"></h2>
+    <div class="meter">
+      <span data-i18n="meter_movie"></span>
+      <div class="track"><div class="fill fill-in" id="barIn"></div></div>
+    </div>
+    <div class="meter">
+      <span data-i18n="meter_you"></span>
+      <div class="track"><div class="fill fill-out" id="barOut"></div></div>
+    </div>
+    <div class="state" id="state"></div>
+    <button class="compare" id="compare"></button>
+  </section>
+
+  <details id="tuning">
+    <summary data-i18n="tuning_title"></summary>
+    <div class="field">
+      <div class="field-head"><label for="boost" data-i18n="boost_label"></label><output id="boostVal"></output></div>
+      <input id="boost" type="range" min="0" max="24" step="1">
+      <p class="field-hint" data-i18n="boost_hint"></p>
+    </div>
+    <div class="field">
+      <div class="field-head"><label for="clarity" data-i18n="clarity_label"></label><output id="clarityVal"></output></div>
+      <input id="clarity" type="range" min="0" max="100" step="5">
+      <p class="field-hint" data-i18n="clarity_hint"></p>
+    </div>
+    <div class="field">
+      <div class="field-head"><label for="volume" data-i18n="volume_label"></label><output id="volumeVal"></output></div>
+      <input id="volume" type="range" min="-12" max="12" step="1">
+      <p class="field-hint" data-i18n="volume_hint"></p>
+    </div>
+    <button class="link" id="reset" data-i18n="reset"></button>
+  </details>
+
+  <div class="error" id="error" role="alert"></div>
+  <button class="link" id="reloadTab" data-i18n="reload_tab" hidden></button>
+
+  <footer class="footer">
+    <label class="lang">
+      <span data-i18n="language"></span>
+      <select id="lang"></select>
+    </label>
+    <span class="version" id="version"></span>
+  </footer>
+
+  <script type="module" src="popup.js"></script>
+</body>
+</html>
