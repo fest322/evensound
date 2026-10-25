@@ -108,9 +108,6 @@ export class LevelerDSP {
 
     // Средняя громкость входа и выхода за последние ~3 с: по ней оригинал
     // при сравнении играет на той же громкости, что и обработанный звук.
-    this.matchCoef = timeCoef(3, this.fs);
-    this.matchIn = 0;
-    this.matchOut = 0;
 
     this.setParams(params);
   }
@@ -139,11 +136,10 @@ export class LevelerDSP {
   process(inL, inR, outL, outR) {
     const p = this.p;
     if (p.bypass) {
-      // Оригинал без обработки, но на той же средней громкости — сравнивается характер звука,
-      // а не «что громче». Лимитер оставляем только как защиту от перегруза.
-      const g = this.matchIn > 1e-10 ? Math.sqrt(this.matchOut / this.matchIn) : 1;
-      const matchGain = Math.min(dbToLin(24), Math.max(dbToLin(-24), g));
-      for (let i = 0; i < inL.length; i++) this.limit(inL[i] * matchGain, inR[i] * matchGain, outL, outR, i);
+      // Оригинал как есть. Подгонять его громкость под обработанный звук нельзя: внутри сцены
+      // выравниватель — это почти постоянное усиление, и подгонка съедает всю разницу.
+      // Через лимитер пропускаем только ради той же задержки, чтобы переключение было без щелчка.
+      for (let i = 0; i < inL.length; i++) this.limit(inL[i], inR[i], outL, outR, i);
       return;
     }
 
@@ -201,10 +197,6 @@ export class LevelerDSP {
       r *= g;
 
       this.limit(l, r, outL, outR, i);
-
-      const mc = this.matchCoef;
-      this.matchIn += ((inL[i] * inL[i] + inR[i] * inR[i]) - this.matchIn) * mc;
-      this.matchOut += ((outL[i] * outL[i] + outR[i] * outR[i]) - this.matchOut) * mc;
     }
   }
 

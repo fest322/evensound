@@ -102,7 +102,7 @@ test('после боя речь возвращается к нормально�
   assert.ok(settled - afterBattle < 4);
 });
 
-test('оригинал при сравнении звучит на той же громкости, что и обработанный', () => {
+test('при сравнении звучит настоящий оригинал', () => {
   const { L, R } = makeMovie();
   const dsp = new LevelerDSP(FS, cinema);
   const outL = new Float32Array(L.length);
@@ -115,17 +115,12 @@ test('оригинал при сравнении звучит на той же �
   }
   const processed = rmsDb(outL, outR, 4, 6);
   const original = rmsDb(outL, outR, 6.1, 8);
-  const raw = rmsDb(L, R, 6.1, 8);
-  console.log(`  обработанный ${processed.toFixed(1)} дБ, оригинал при сравнении ${original.toFixed(1)} дБ (без выравнивания был бы ${raw.toFixed(1)})`);
-  assert.ok(Math.abs(processed - original) < 1.5);
+  console.log(`  обработанный ${processed.toFixed(1)} дБ, оригинал при сравнении ${original.toFixed(1)} дБ`);
+  assert.ok(processed - original > 6, 'тихий диалог в оригинале должен быть заметно тише');
 
-  // Оригинал — это вход, умноженный на постоянный коэффициент (с задержкой лимитера), без обработки.
+  // Оригинал — это вход без изменений, только с задержкой лимитера.
   const delay = Math.round(0.005 * FS);
-  const i0 = Math.round(7 * FS);
-  const ratio = outL[i0 + delay] / L[i0];
-  for (let i = i0; i < i0 + 1000; i++) {
-    if (Math.abs(L[i]) > 1e-3) assert.ok(Math.abs(outL[i + delay] / L[i] - ratio) < 1e-3);
-  }
+  for (let i = 7 * FS; i < 7 * FS + 1000; i++) assert.ok(Math.abs(outL[i + delay] - L[i]) < 1e-6);
 });
 
 test('все пресеты дают ровный звук', () => {

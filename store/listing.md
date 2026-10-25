@@ -39,7 +39,7 @@ Night: almost flat. For when someone next door is asleep.
 
 Want more control? Open "Fine-tuning" for three sliders: how much to lift quiet scenes, how far to bring voices forward, and overall volume.
 
-To hear the difference, press and hold "Hold to hear the original". While you hold it, you hear the untouched sound at the same overall volume, so you compare how it sounds, not which is louder.
+To hear the difference, press and hold "Hold to hear the original". While you hold it, you hear the untouched sound, exactly as the site plays it.
 
 WHERE IT WORKS
 Any site that plays sound in a tab: YouTube, streaming services, players embedded in web pages. EvenSound doesn't care which player a site uses, because it works with the sound of the whole tab.
@@ -88,7 +88,7 @@ EvenSound выравнивает громкость фильмов в брауз
 
 Если хочется точнее, откройте «Тонкую настройку». Там три ползунка: насколько поднимать тихие сцены, насколько выводить голоса вперёд и общая громкость.
 
-Чтобы услышать разницу, зажмите кнопку «Удерживайте, чтобы услышать оригинал». Пока держите, играет исходный звук на той же средней громкости — так сравнивается характер звука, а не «что громче».
+Чтобы услышать разницу, зажмите кнопку «Удерживайте, чтобы услышать оригинал». Пока держите, играет исходный звук — ровно такой, как его отдаёт сайт.
 
 ГДЕ РАБОТАЕТ
 На любом сайте, где звук идёт из вкладки: YouTube, онлайн-кинотеатры, плееры, встроенные в страницу. Какой у сайта плеер, неважно: EvenSound работает со звуком всей вкладки.
@@ -137,7 +137,7 @@ Noche: sonido casi plano. Para cuando alguien duerme en la habitación de al lad
 
 ¿Quieres afinar más? Abre «Ajuste fino»: tres controles para cuánto subir las escenas tranquilas, cuánto adelantar las voces y el volumen general.
 
-Para notar la diferencia, mantén pulsado «Mantén pulsado para oír el original». Mientras lo mantienes, suena el audio sin tocar al mismo volumen medio, así comparas cómo suena y no cuál es más alto.
+Para notar la diferencia, mantén pulsado «Mantén pulsado para oír el original». Mientras lo mantienes, suena el audio sin tocar, tal como lo reproduce la web.
 
 DÓNDE FUNCIONA
 En cualquier web que reproduzca sonido en una pestaña: YouTube, plataformas de streaming, reproductores integrados en páginas. Da igual qué reproductor use la web, porque EvenSound trabaja con el sonido de toda la pestaña.
@@ -186,7 +186,7 @@ Noite: som quase plano. Para quando alguém está dormindo no quarto ao lado.
 
 Quer mais controle? Abra "Ajuste fino": três controles para quanto realçar cenas baixas, quanto trazer as vozes para frente e o volume geral.
 
-Para ouvir a diferença, segure o botão "Segure para ouvir o original". Enquanto segura, toca o som sem alteração no mesmo volume médio, para comparar como soa e não qual é mais alto.
+Para ouvir a diferença, segure o botão "Segure para ouvir o original". Enquanto segura, toca o som sem alteração, exatamente como o site reproduz.
 
 ONDE FUNCIONA
 Em qualquer site que toque som numa aba: YouTube, serviços de streaming, players incorporados em páginas. Não importa o player do site, porque o EvenSound trabalha com o som da aba inteira.
@@ -235,7 +235,7 @@ Nuit : son presque plat. Pour quand quelqu'un dort dans la pièce d'à côté.
 
 Envie de plus de contrôle ? Ouvrez « Réglages fins » : trois curseurs pour relever les passages calmes, mettre les voix en avant et régler le volume général.
 
-Pour entendre la différence, maintenez le bouton « Maintenez pour écouter l'original ». Tant que vous le maintenez, vous entendez le son intact au même volume moyen : on compare le rendu, pas lequel est le plus fort.
+Pour entendre la différence, maintenez le bouton « Maintenez pour écouter l'original ». Tant que vous le maintenez, vous entendez le son intact, tel que le site le diffuse.
 
 OÙ ÇA MARCHE
 Sur tout site qui joue du son dans un onglet : YouTube, services de streaming, lecteurs intégrés aux pages. Peu importe le lecteur du site : EvenSound travaille sur le son de tout l'onglet.
@@ -284,7 +284,7 @@ Nacht: fast gleichmäßiger Ton. Wenn nebenan jemand schläft.
 
 Mehr Kontrolle? Unter „Feineinstellung" gibt es drei Regler: wie stark leise Szenen angehoben werden, wie weit Stimmen nach vorn rücken und die Gesamtlautstärke.
 
-Um den Unterschied zu hören, halten Sie „Gedrückt halten für Originalton" gedrückt. Solange Sie drücken, hören Sie den unveränderten Ton in gleicher Durchschnittslautstärke — so vergleichen Sie den Klang, nicht die Lautstärke.
+Um den Unterschied zu hören, halten Sie „Gedrückt halten für Originalton" gedrückt. Solange Sie drücken, hören Sie den unveränderten Ton, genau so, wie die Website ihn abspielt.
 
 WO ES FUNKTIONIERT
 Auf jeder Website, die Ton in einem Tab abspielt: YouTube, Streaming-Dienste, in Seiten eingebettete Player. Welcher Player es ist, spielt keine Rolle, denn EvenSound arbeitet mit dem Ton des ganzen Tabs.
