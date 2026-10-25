@@ -1,0 +1,131 @@
+{
+  "extName": {
+    "message": "EvenSound"
+  },
+  "extDescription": {
+    "message": "Équilibre le son des films : action plus douce, dialogues plus forts. Fonctionne avec toute vidéo d'un onglet."
+  },
+  "status_on": {
+    "message": "Actif sur cet onglet"
+  },
+  "status_off": {
+    "message": "Désactivé"
+  },
+  "status_hint_off": {
+    "message": "Activez pour équilibrer le son de cet onglet"
+  },
+  "status_hint_on": {
+    "message": "Le volume s'adapte à chaque scène"
+  },
+  "mode_title": {
+    "message": "Mode"
+  },
+  "preset_soft": {
+    "message": "Doux"
+  },
+  "preset_soft_desc": {
+    "message": "L'action garde son punch, sans excès"
+  },
+  "preset_cinema": {
+    "message": "Cinéma"
+  },
+  "preset_cinema_desc": {
+    "message": "Action plus douce, dialogues plus forts"
+  },
+  "preset_night": {
+    "message": "Nuit"
+  },
+  "preset_night_desc": {
+    "message": "Régulier et calme — ne réveille personne"
+  },
+  "preset_modified": {
+    "message": "modifié"
+  },
+  "now_title": {
+    "message": "En ce moment"
+  },
+  "meter_movie": {
+    "message": "Film"
+  },
+  "meter_you": {
+    "message": "Vous entendez"
+  },
+  "state_waiting": {
+    "message": "En attente de son…"
+  },
+  "state_silence": {
+    "message": "Silence"
+  },
+  "state_raise": {
+    "message": "Scène calme — j'augmente de {n} dB"
+  },
+  "state_lower": {
+    "message": "Scène forte — je baisse de {n} dB"
+  },
+  "state_even": {
+    "message": "Niveau correct — inchangé"
+  },
+  "compare_hold": {
+    "message": "Maintenez pour écouter l'original"
+  },
+  "compare_active": {
+    "message": "Original, au même volume"
+  },
+  "tuning_title": {
+    "message": "Réglages fins"
+  },
+  "boost_label": {
+    "message": "Relever les passages calmes"
+  },
+  "boost_hint": {
+    "message": "À quel point chuchotements et conversations calmes deviennent plus forts"
+  },
+  "boost_value": {
+    "message": "jusqu'à +{n} dB"
+  },
+  "boost_off": {
+    "message": "désactivé"
+  },
+  "clarity_label": {
+    "message": "Voix en avant"
+  },
+  "clarity_hint": {
+    "message": "La parole ressort mieux face à la musique et aux effets"
+  },
+  "volume_label": {
+    "message": "Volume général"
+  },
+  "volume_hint": {
+    "message": "Si le son est trop faible ou trop fort après activation"
+  },
+  "reset": {
+    "message": "Revenir au mode"
+  },
+  "language": {
+    "message": "Langue"
+  },
+  "lang_auto": {
+    "message": "Comme le navigateur"
+  },
+  "error_capture": {
+    "message": "Impossible de capturer le son de l'onglet : {msg}"
+  },
+  "error_restricted": {
+    "message": "Cette page ne peut pas être traitée : Chrome interdit la capture de ses pages internes et du Web Store."
+  },
+  "volume_value": {
+    "message": "{n} dB"
+  },
+  "error_busy": {
+    "message": "Le son de l'onglet est encore pris par une session précédente — cela arrive après une mise à jour de l'extension. Rechargez l'onglet et réactivez."
+  },
+  "reload_tab": {
+    "message": "Recharger l'onglet"
+  },
+  "state_raise_slight": {
+    "message": "J'augmente un peu — de {n} dB"
+  },
+  "state_lower_slight": {
+    "message": "Je baisse un peu — de {n} dB"
+  }
+}
