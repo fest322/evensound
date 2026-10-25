@@ -7,9 +7,9 @@
 встроенные плееры на сайтах, iframe.
 
 <p align="center">
-  <img src="store/screenshots/ru-1.png" width="32%" alt="Режимы">
-  <img src="store/screenshots/ru-2.png" width="32%" alt="Что происходит со звуком">
-  <img src="store/screenshots/ru-3.png" width="32%" alt="Тонкая настройка">
+  <img src="store/screenshots/ru-1.png" width="32%" alt="EvenSound">
+  <img src="store/screenshots/ru-2.png" width="32%" alt="Три режима">
+  <img src="store/screenshots/ru-3.png" width="32%" alt="Работает с любым видео во вкладке">
 </p>
 
 ## Установка
