@@ -24,12 +24,39 @@ function setBadge(tabId, on) {
   if (on) chrome.action.setBadgeBackgroundColor({ tabId, color: '#2e7d32' }).catch(() => {});
 }
 
-async function handle(msg) {
+// Пока вкладка захвачена, Chrome разворачивает видео только на размер вкладки.
+// Поэтому, когда страница уходит в полноэкранный режим, разворачиваем на весь экран само окно,
+// а при выходе возвращаем окну прежнее состояние.
+async function watchFullscreen(tabId) {
+  await chrome.scripting.executeScript({ target: { tabId }, files: ['fullscreen.js'] }).catch(() => {});
+}
+
+async function onPageFullscreen(tab, on) {
+  const key = `fs:${tab.windowId}`;
+  if (on) {
+    const status = await handle({ type: 'status', tabId: tab.id });
+    if (!status?.active) return;
+    const win = await chrome.windows.get(tab.windowId);
+    if (win.state === 'fullscreen') return;
+    await chrome.storage.session.set({ [key]: win.state });
+    await chrome.windows.update(tab.windowId, { state: 'fullscreen' });
+  } else {
+    const { [key]: prev } = await chrome.storage.session.get(key);
+    if (!prev) return;
+    await chrome.storage.session.remove(key);
+    await chrome.windows.update(tab.windowId, { state: prev });
+  }
+}
+
+async function handle(msg, sender) {
   switch (msg.type) {
     case 'start': {
       await ensureOffscreen();
       const res = await toOffscreen({ type: 'start', tabId: msg.tabId, streamId: msg.streamId, params: msg.params });
-      if (!res?.error) setBadge(msg.tabId, true);
+      if (!res?.error) {
+        setBadge(msg.tabId, true);
+        watchFullscreen(msg.tabId);
+      }
       return res;
     }
     case 'stop':
@@ -42,6 +69,12 @@ async function handle(msg) {
     case 'status':
       if (!(await hasOffscreen())) return { active: false };
       return toOffscreen({ type: 'status', tabId: msg.tabId });
+    case 'watch':
+      await watchFullscreen(msg.tabId);
+      return { ok: true };
+    case 'fullscreen':
+      if (sender?.tab) await onPageFullscreen(sender.tab, msg.on);
+      return { ok: true };
     case 'ended':
       setBadge(msg.tabId, false);
       return { ok: true };
@@ -49,9 +82,9 @@ async function handle(msg) {
   return { error: `неизвестная команда ${msg.type}` };
 }
 
-chrome.runtime.onMessage.addListener((msg, _sender, sendResponse) => {
+chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
   if (msg.target !== 'background') return false;
-  handle(msg).then(sendResponse, (err) => sendResponse({ error: String(err?.message ?? err) }));
+  handle(msg, sender).then(sendResponse, (err) => sendResponse({ error: String(err?.message ?? err) }));
   return true;
 });
 

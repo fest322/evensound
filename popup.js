@@ -226,6 +226,9 @@ async function init() {
   window.addEventListener('blur', () => setComparing(false));
 
   await refresh();
+  // Доступ к странице Chrome даёт при открытии popup и отзывает при переходе на другой сайт,
+  // поэтому слежение за полноэкранным режимом обновляем при каждом открытии.
+  if (active) toBackground({ type: 'watch', tabId: tab.id });
   // Если popup закрыли, держа кнопку сравнения, обработка не должна остаться на паузе.
   if (active) sendParams();
   setInterval(refresh, 250);

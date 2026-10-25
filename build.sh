@@ -7,7 +7,7 @@ FILES=(
   manifest.json
   _locales
   i18n.js
-  background.js
+  background.js fullscreen.js
   offscreen.html offscreen.js
   popup.html popup.css popup.js
   worklet.js dsp.js presets.js

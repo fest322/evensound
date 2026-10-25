@@ -27,6 +27,9 @@
   <h2>Tab audio</h2>
   <p>When you turn EvenSound on for a tab, it captures that tab's audio using Chrome's <code>tabCapture</code> API in order to adjust its volume in real time. The audio is processed locally on your device and played back immediately. It is never recorded, saved or sent anywhere. Capture stops when you turn EvenSound off or close the tab.</p>
 
+  <h2>Fullscreen</h2>
+  <p>While a tab's audio is captured, Chrome keeps fullscreen video inside the browser window. To fix this, EvenSound adds a small script to the tab where you turned it on, using Chrome's <code>activeTab</code> and <code>scripting</code> APIs. The script only notices when the page enters or leaves fullscreen, so that EvenSound can make the browser window fullscreen and restore it afterwards. It does not read or change page content.</p>
+
   <h2>Settings</h2>
   <p>Your settings (selected mode, slider positions and interface language) are stored locally in your browser using Chrome's <code>storage</code> API. They are not synchronized or sent to us.</p>
 
@@ -46,6 +49,8 @@
     <p>Никаких. EvenSound не собирает, не хранит, не продаёт и не передаёт личные данные, историю посещений, звук или статистику использования. Нет аккаунтов, аналитики, рекламы и сторонних сервисов.</p>
     <h2>Звук вкладки</h2>
     <p>Когда вы включаете EvenSound на вкладке, расширение захватывает её звук через API Chrome <code>tabCapture</code>, чтобы подстраивать громкость в реальном времени. Звук обрабатывается на вашем устройстве и сразу воспроизводится. Он никогда не записывается, не сохраняется и никуда не отправляется. Захват прекращается, когда вы выключаете EvenSound или закрываете вкладку.</p>
+    <h2>Полноэкранный режим</h2>
+    <p>Пока звук вкладки захвачен, Chrome разворачивает видео только в пределах окна. Чтобы это исправить, EvenSound добавляет небольшой скрипт на вкладку, где вы его включили, через API Chrome <code>activeTab</code> и <code>scripting</code>. Скрипт только замечает, когда страница входит в полноэкранный режим и выходит из него, чтобы EvenSound развернул окно браузера на весь экран и потом вернул как было. Он не читает и не меняет содержимое страницы.</p>
     <h2>Настройки</h2>
     <p>Настройки (выбранный режим, положение ползунков и язык интерфейса) хранятся локально в браузере через API Chrome <code>storage</code>. Они не синхронизируются и не отправляются нам.</p>
     <h2>Изменения</h2>

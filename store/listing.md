@@ -51,7 +51,7 @@ Why is there a capture icon on the tab?
 That's how Chrome shows that the tab's sound is being processed. Nothing is recorded.
 
 Why does fullscreen video stay inside the browser window?
-While a tab's sound is being processed, Chrome shows fullscreen video inside the window. Press F11 (Ctrl+Cmd+F on Mac) to make the whole browser fullscreen.
+Normally it doesn't: when a video goes fullscreen, EvenSound makes the whole browser window fullscreen and restores it when you exit. If you went to another site in the same tab, Chrome asks for the EvenSound icon to be clicked once on the new page. F11 (Ctrl+Cmd+F on Mac) also works.
 
 It got quieter after I turned it on.
 That's expected: the sound is brought to an even middle level. Raise "Overall volume" in Fine-tuning, or turn up the TV once.
@@ -100,7 +100,7 @@ EvenSound выравнивает громкость фильмов в брауз
 Так Chrome показывает, что звук вкладки обрабатывается. Ничего не записывается.
 
 Почему видео во весь экран открывается внутри окна?
-Пока звук вкладки обрабатывается, Chrome разворачивает видео только в пределах окна. Нажмите F11 (на Mac — Ctrl+Cmd+F), и весь браузер станет полноэкранным.
+Обычно этого не происходит: когда видео разворачивается, EvenSound переводит всё окно браузера в полноэкранный режим, а при выходе возвращает как было. Если вы перешли на другой сайт в той же вкладке, Chrome требует один раз нажать на значок EvenSound на новой странице. Ещё можно нажать F11 (на Mac — Ctrl+Cmd+F).
 
 После включения стало тише.
 Так и задумано: звук приводится к ровному среднему уровню. Прибавьте «Общую громкость» в тонкой настройке или один раз прибавьте звук на телевизоре.
@@ -149,7 +149,7 @@ PREGUNTAS
 Es la forma en que Chrome indica que el sonido de la pestaña se está procesando. No se graba nada.
 
 ¿Por qué el vídeo a pantalla completa se queda dentro de la ventana?
-Mientras se procesa el sonido de una pestaña, Chrome muestra la pantalla completa dentro de la ventana. Pulsa F11 (Ctrl+Cmd+F en Mac) para poner todo el navegador a pantalla completa.
+Normalmente no pasa: cuando un vídeo se pone a pantalla completa, EvenSound pone toda la ventana del navegador a pantalla completa y la restaura al salir. Si has ido a otro sitio en la misma pestaña, Chrome pide hacer clic una vez en el icono de EvenSound en la nueva página. También funciona F11 (Ctrl+Cmd+F en Mac).
 
 Al activarlo suena más bajo.
 Es normal: el sonido se lleva a un nivel medio estable. Sube «Volumen general» en el ajuste fino o sube una vez la tele.
@@ -198,7 +198,7 @@ Por que aparece um ícone de captura na aba?
 É assim que o Chrome mostra que o som da aba está sendo processado. Nada é gravado.
 
 Por que o vídeo em tela cheia fica dentro da janela?
-Enquanto o som de uma aba é processado, o Chrome mostra a tela cheia dentro da janela. Pressione F11 (Ctrl+Cmd+F no Mac) para deixar o navegador inteiro em tela cheia.
+Normalmente não fica: quando um vídeo entra em tela cheia, o EvenSound coloca a janela inteira do navegador em tela cheia e restaura ao sair. Se você foi para outro site na mesma aba, o Chrome pede um clique no ícone do EvenSound na nova página. F11 (Ctrl+Cmd+F no Mac) também funciona.
 
 Ficou mais baixo depois de ligar.
 É esperado: o som é levado a um nível médio estável. Aumente "Volume geral" no ajuste fino ou aumente a TV uma vez.
@@ -247,7 +247,7 @@ Pourquoi une icône de capture apparaît sur l'onglet ?
 C'est ainsi que Chrome indique que le son de l'onglet est traité. Rien n'est enregistré.
 
 Pourquoi la vidéo en plein écran reste dans la fenêtre ?
-Pendant le traitement du son d'un onglet, Chrome affiche le plein écran dans la fenêtre. Appuyez sur F11 (Ctrl+Cmd+F sur Mac) pour mettre tout le navigateur en plein écran.
+Normalement non : quand une vidéo passe en plein écran, EvenSound met toute la fenêtre du navigateur en plein écran et la rétablit à la sortie. Si vous êtes allé sur un autre site dans le même onglet, Chrome demande de cliquer une fois sur l'icône EvenSound sur la nouvelle page. F11 (Ctrl+Cmd+F sur Mac) marche aussi.
 
 Le son est plus faible après activation.
 C'est normal : le son est ramené à un niveau moyen stable. Montez « Volume général » dans les réglages fins, ou montez une fois la télé.
@@ -296,7 +296,7 @@ Warum erscheint am Tab ein Aufnahme-Symbol?
 So zeigt Chrome an, dass der Ton des Tabs verarbeitet wird. Es wird nichts aufgenommen.
 
 Warum bleibt das Vollbild-Video im Browserfenster?
-Während der Ton eines Tabs verarbeitet wird, zeigt Chrome Vollbild nur innerhalb des Fensters. Drücken Sie F11 (Ctrl+Cmd+F auf dem Mac), um den ganzen Browser in den Vollbildmodus zu schalten.
+Normalerweise nicht: Wenn ein Video in den Vollbildmodus geht, schaltet EvenSound das ganze Browserfenster in den Vollbildmodus und stellt es beim Verlassen wieder her. Wenn Sie im selben Tab eine andere Website geöffnet haben, verlangt Chrome einen Klick auf das EvenSound-Symbol auf der neuen Seite. F11 (Ctrl+Cmd+F auf dem Mac) geht auch.
 
 Nach dem Einschalten ist es leiser.
 Das ist so gewollt: Der Ton wird auf ein gleichmäßiges mittleres Niveau gebracht. Erhöhen Sie „Gesamtlautstärke" in der Feineinstellung oder drehen Sie den Fernseher einmal lauter.
@@ -333,6 +333,16 @@ An offscreen document hosts the Web Audio (AudioWorklet) processing of the captu
 **Permission justification — storage:**
 ```
 Stores the user's settings locally: selected mode, slider positions and interface language.
+```
+
+**Permission justification — activeTab:**
+```
+Gives EvenSound access to the page in the current tab only after the user clicks the toolbar button, so that it can add the small script described under "scripting". No access to other tabs or sites.
+```
+
+**Permission justification — scripting:**
+```
+Adds a small script to the tab where the user turned EvenSound on. The script only listens for the page entering or leaving fullscreen and tells the extension, which then makes the browser window fullscreen (Chrome otherwise keeps fullscreen video inside the window while the tab's audio is captured). It does not read or change page content.
 ```
 
 **Are you using remote code?** No, I am not using remote code.
