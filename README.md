@@ -1,8 +1,16 @@
 # EvenSound
 
+<p align="center"><img src="store/promo-440x280-ru.png" width="440" alt="EvenSound"></p>
+
 Расширение Chrome, которое выравнивает громкость фильмов: экшен тише, диалоги громче.
 Захватывает весь звук вкладки, поэтому работает с любым плеером — YouTube,
 встроенные плееры на сайтах, iframe.
+
+<p align="center">
+  <img src="store/screenshots/ru-1.png" width="32%" alt="Режимы">
+  <img src="store/screenshots/ru-2.png" width="32%" alt="Что происходит со звуком">
+  <img src="store/screenshots/ru-3.png" width="32%" alt="Тонкая настройка">
+</p>
 
 ## Установка
 
